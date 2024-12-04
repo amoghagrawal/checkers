@@ -1,0 +1,41 @@
+<html><head><base href="." />
+    <title>Checkers Game with AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="game-container">
+      <div class="turn-indicator">
+        <div>Current Turn: <span id="current-turn">Red</span></div>
+        <div class="thinking" id="thinking"></div>
+      </div>
+      <div class="board" id="board"></div>
+      <div class="status" id="status"></div>
+      <div class="controls">
+        <button class="button" id="resetBtn">Reset Game</button>
+        <button class="button" id="instructionsBtn">How to Play</button>
+      </div>
+    </div>
+    <div class="modal" id="victoryModal">
+      <div class="modal-content">
+        <h2 id="victoryText"></h2>
+        <p>Press Enter to start a new game</p>
+      </div>
+    </div>
+    <div class="modal" id="instructionsModal">
+      <div class="modal-content">
+        <h2>How to Play Checkers</h2>
+        <div class="instructions-content">
+          <p>1. Red moves first. You are playing as red pieces.</p>
+          <p>2. Click on your piece to select it, then click on a highlighted square to move.</p>
+          <p>3. Regular pieces can only move forward diagonally.</p>
+          <p>4. Jump over opponent's pieces to capture them.</p>
+          <p>5. When a piece reaches the opposite end of the board, it becomes a King.</p>
+          <p>6. Kings can move and capture both forward and backward.</p>
+          <p>7. Win by capturing all opponent's pieces!</p>
+        </div>
+        <button class="button" id="closeInstructionsBtn">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    </body></html>
